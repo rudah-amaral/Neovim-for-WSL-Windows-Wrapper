@@ -13,9 +13,9 @@ int main(int argc, char **argv) {
   strcat(fullCmd, wslDistribution);
   strcat(fullCmd, " ");
   strcat(fullCmd, linuxCommand);
-  strcat(fullCmd, " \"$(wslpath \'");
+  strcat(fullCmd, " \"$(wslpath \\\"");
   strcat(fullCmd, argv[1]);
-  strcat(fullCmd, "\')\"");
+  strcat(fullCmd, "\\\")\"");
 
   system(fullCmd);
   return 0;
