@@ -1,0 +1,24 @@
+A ICON MOVEABLE PURE LOADONCALL DISCARDABLE "neovim.ico"
+
+1 VERSIONINFO
+FILEVERSION     1,0,0,0
+PRODUCTVERSION  1,0,0,0
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904E4"
+    BEGIN
+      VALUE "CompanyName", "Rudah Amaral"
+      VALUE "FileDescription", "Neovim"
+      VALUE "FileVersion", "1.0"
+      VALUE "InternalName", "Neovim"
+      VALUE "OriginalFilename", "Neovim.exe"
+      VALUE "ProductName", "Neovim"
+      VALUE "ProductVersion", "1.0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x409, 1252
+  END
+END
