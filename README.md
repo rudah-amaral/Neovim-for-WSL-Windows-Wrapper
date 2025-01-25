@@ -1,9 +1,9 @@
 # Neovim-for-WSL-Windows-Wrapper
 
 A C program wrapper that allows you to use Windows' Open With context menu
-action with WSL's nvim. More Than that, it opens Neovim inside Windows Terminal!
+action with WSL's nvim inside Windows Terminal.
 
-## !WARNING!
+## A word of caution
 
 This C program requires a system call that takes input from the user (you).
 While I'm not smart enough to figure out how, a file with a ingenious name could
@@ -15,34 +15,19 @@ OWN RISK.
 
 ### Requirements
 
-WSL (duh)
-
-Neovim (duh)
-
-Windows Terminal
-
 MSYS2 - CLANG64
 
 ### Steps
 
 ```bash
-windres icon.rc -O coff -o icon.res
-clang -o Neovim.exe wrapper.c icon.res
+windres metadata.rc -O coff -o metadata.res
+clang -o Neovim.exe wrapper.c metadata.res
 ```
 
 After that, move the resulting executable anyplace you want. I personally
 prefer inside its own folder, nested inside the Program Files one.
 
 Now, you can use the context menu Open With option with the resulting program.
-
-## Pending Issues
-
-In the Open With context menu, the wrapper is labeled as "Win32 Cabinet Self
-Extractor". I don't know why or how to fix it.
-
-Although the program itself has an icon, I wasn't able to make associated files
-take the same icon. While I don't figure this one out I'll recommend using
-Default Program Editor as a quick fix.
 
 ## Customizability
 
